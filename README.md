@@ -1,16 +1,16 @@
 node-pngdefry
 ==============
-This is a nodejs wrapper for pngdefry command line tool that reverses the optimization XCode does on png images included into iPA files to make the images readable by the browser.
+This is a nodejs wrapper for pngdefry command line tool that reverses the optimisation XCode does on png images included into iPA files to make the images readable by the browser.
 
 ### Why you may need it ?
 
-If you want for any reason to extract App Icons (PNG images ) out of iPA files ( iOS Apps ) you will need this ; becuase you gonna find that those extracted PNG images are not readable by the browser . 
+If you want for any reason to extract App Icons (PNG images ) out of iPA files ( iOS Apps ) you will need this ; because you gonna find that those extracted PNG images are not readable by the browser . 
 
-Apple uses [PNGCursh](http://pmt.sourceforge.net/pngcrush/) open source library to crush png images inside iPA files , to revese this provess back you need to do it throw pngdefy lib , 
+Apple uses [PNGCursh](http://pmt.sourceforge.net/pngcrush/) open source library to crush png images inside iPA files , to reverse this process back you need to do it throw pngdefy lib , 
 
 ### Platforms supported:
 
-+ OSX (Drawin) : Must have buitl tools ( config , make ) installed.
++ OSX (Drawin) : Must have built tools ( config , make ) installed.
 + Linux.
 
 
@@ -33,23 +33,23 @@ png_converter.convert(source_image_file, destination_direcotry, null, function (
 });
 ```
 
-+ source_image_file : the source for the png image to be defried by the library.
-+ destination_directory :  the destination direcotry where the result image need to be saved , by default it is saved by the original image name.
-+ suffix : in case you want to save it in the same original image direcotry , you need to may use this argumant to add a suffix to the saved image name.
++ source_image_file : the source for the png image to be deferd by the library.
++ destination_directory :  the destination directory where the result image need to be saved , by default it is saved by the original image name.
++ suffix : in case you want to save it in the same original image directory , you need to may use this argumant to add a suffix to the saved image name.
 
 ### Test
 
-A test script is added under tests direcotry :
-+ First open the image under /tests direcotory by the browser other than safari , it will not be displayed.
+A test script is added under tests directory :
++ First open the image under /tests directory by the browser other than safari , it will not be displayed.
 
-+ Run this commands inside the module root direcotory
++ Run this commands inside the module root directory
 
 ```javascript
 npm install
 npm test 
 ```
 
-+ If you have successfully installed the package ,the test should pass and   new image with the same name should be created under tests/ouput direcotory .
++ If you have successfully installed the package ,the test should pass and   new image with the same name should be created under tests/output directory .
 
 + Open the image with your browser it should be displayed.
 
